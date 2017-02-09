@@ -23,6 +23,7 @@
 
     "commit": "npm-run-all -s test build:* git:*",
 
+    "build": "npm-run-all -s build:*",
     "build:clean": "rimraf dist",
     "build:bundle": "rollup -c",
     "build:show": "ls -al dist"
