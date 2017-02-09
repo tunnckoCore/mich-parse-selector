@@ -15,6 +15,6 @@ module.exports = {
     zopfli({ options: { numiterations: 1000 } })
   ],
   targets: [
-    { dest: 'dist/mich-parse-selector.umd.js', format: 'umd' }
+    { dest: 'dist/mich-parse-selector.min.js', format: 'umd' }
   ]
 }

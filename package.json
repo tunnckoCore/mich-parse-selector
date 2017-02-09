@@ -5,7 +5,7 @@
   "repository": "tunnckoCore/mich-parse-selector",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://i.am.charlike.online)",
   "precommit.silent": true,
-  "browser": "dist/mich-parse-selector.umd.js",
+  "browser": "dist/mich-parse-selector.min.js",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
