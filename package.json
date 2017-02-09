@@ -11,15 +11,11 @@
   "scripts": {
     "lint": "standard --fix --verbose",
     "pretest": "npm run lint",
-    "test": "npm run coverage",
-    "posttest": "npm run lint:coverage",
-    "coverage": "nyc node test.js",
-    "lint:coverage": "nyc check-coverage --lines 0 --branches 0 --statements 0 --functions 0",
-    "report-coverage": "nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc node test.js",
     "prerelease": "npm test",
     "release": "standard-version --sign --no-verify",
-    "precommit": "git add --all",
-    "commit": "git-cz",
+    "gitadd": "git add --all",
+    "commit": "npm test && npm run gitadd && git-cz",
     "prebuild": "rimraf dist",
     "build": "rollup -c",
     "postbuild": "ls -al dist"
@@ -95,5 +91,12 @@
   "engines": {
     "node": ">=4",
     "npm": ">=2"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "lines": 100
   }
 }
