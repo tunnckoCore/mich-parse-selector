@@ -1,6 +1,6 @@
 # mich-parse-selector [![NPM version](https://img.shields.io/npm/v/mich-parse-selector.svg?style=flat)](https://www.npmjs.com/package/mich-parse-selector) [![NPM monthly downloads](https://img.shields.io/npm/dm/mich-parse-selector.svg?style=flat)](https://npmjs.org/package/mich-parse-selector) [![npm total downloads][downloads-img]][downloads-url]
 
-> Parsing a simple CSS selector (tag name, class, id) to a HAST node. Pretty similar to what is done in [hyperscript][]
+> Tiny parser for simple CSS selectors, just in 300 bytes.  Pretty similar to what is done in [hyperscript][]
 
 [![code climate][codeclimate-img]][codeclimate-url] 
 [![standard code style][standard-img]][standard-url] 
