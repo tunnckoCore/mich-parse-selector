@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "Tiny parser for simple CSS selectors, just in ~300 bytes.  Pretty similar to what is done in [hyperscript][]",
   "repository": "tunnckoCore/mich-parse-selector",
-  "author": "Charlike Mike Reagent <@tunnckoCore> (http://i.am.charlike.online)",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (https://i.am.charlike.online)",
   "precommit.silent": true,
   "browser": "dist/mich-parse-selector.min.js",
   "main": "index.js",

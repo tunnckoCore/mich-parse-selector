@@ -1,7 +1,7 @@
 /*!
  * mich-parse-selector <https://github.com/tunnckoCore/mich-parse-selector>
  *
- * Copyright (c) Charlike Mike Reagent <@tunnckoCore> (http://i.am.charlike.online)
+ * Copyright (c) Charlike Mike Reagent <@tunnckoCore> (https://i.am.charlike.online)
  * Copyright (c) Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)
  * Released under the MIT license.
  */
