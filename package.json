@@ -19,6 +19,7 @@
     "release": "standard-version --sign --no-verify",
     "precommit": "git add --all",
     "commit": "git-cz",
+    "prebuild": "rimraf dist",
     "build": "rollup -c",
     "postbuild": "ls -al dist"
   },
