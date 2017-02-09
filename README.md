@@ -1,6 +1,6 @@
 # mich-parse-selector [![NPM version](https://img.shields.io/npm/v/mich-parse-selector.svg?style=flat)](https://www.npmjs.com/package/mich-parse-selector) [![NPM monthly downloads](https://img.shields.io/npm/dm/mich-parse-selector.svg?style=flat)](https://npmjs.org/package/mich-parse-selector) [![npm total downloads][downloads-img]][downloads-url]
 
-> Parsing a simple CSS selector (tag name, class, id) to a HAST node. Pretty similar to what is done in [hyperscript][] package.
+> Parsing a simple CSS selector (tag name, class, id) to a HAST node. Pretty similar to what is done in [hyperscript][]
 
 [![code climate][codeclimate-img]][codeclimate-url] 
 [![standard code style][standard-img]][standard-url] 
@@ -9,7 +9,7 @@
 [![coverage status][coveralls-img]][coveralls-url] 
 [![dependency status][david-img]][david-url]
 
-You might also be interested in [gibon](https://github.com/tunnckocore/gibon#readme).
+_You might also be interested in [gibon][] - a minimal & functional 600 bytes client-side router._
 
 ## Table of Contents
 - [Install](#install)
@@ -133,3 +133,4 @@ _Project scaffolded using [charlike][] cli._
 [standard-url]: https://github.com/feross/standard
 [standard-img]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
 
+[gibon]: https://github.com/tunnckocore/gibon

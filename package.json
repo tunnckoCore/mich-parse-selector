@@ -1,7 +1,7 @@
 {
   "name": "mich-parse-selector",
   "version": "0.1.0",
-  "description": "Parsing a simple CSS selector (tag name, class, id) to a HAST node. Pretty similar to what is done in [hyperscript][] package.",
+  "description": "Parsing a simple CSS selector (tag name, class, id) to a HAST node. Pretty similar to what is done in [hyperscript][]",
   "repository": "tunnckoCore/mich-parse-selector",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://i.am.charlike.online)",
   "precommit.silent": true,
