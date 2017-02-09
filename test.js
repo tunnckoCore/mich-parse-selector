@@ -44,8 +44,8 @@ test('should return a div with a class', (done) => {
 test('should return a section element with an id', (done) => {
   const section = michParseSelector('section#hero')
   test.deepStrictEqual(section, expected({
-    tagName: 'section',
-    properties: { id: 'hero' }
+    properties: { id: 'hero' },
+    tagName: 'section'
   }))
   done()
 })
@@ -63,12 +63,13 @@ test('should support to define multiple classes', (done) => {
 })
 
 test('should only respect last defined id', (done) => {
-  const link = michParseSelector('a#bar#qux')
-  test.deepStrictEqual(link, expected({
-    tagName: 'a',
+  const node = expected({
+    tagName: 'div',
     properties: {
       id: 'qux'
     }
-  }))
+  })
+  const link = michParseSelector('#a#bar#qux')
+  test.deepStrictEqual(link, node)
   done()
 })
