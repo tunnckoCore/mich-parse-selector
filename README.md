@@ -53,7 +53,7 @@ const michParseSelector = require('mich-parse-selector')
 **Params**
 
 * `selector` **{String}**: a css selector    
-* `returns` **{Object}**: a HAST-compliant node object  
+* `returns` **{Object}**: a [HAST](https://github.com/syntax-tree/hast)-compliant node object  
 
 **Example**
 

@@ -39,7 +39,7 @@
  *
  * @name   michParseSelector
  * @param  {String} `selector` a css selector
- * @return {Object} a HAST-compliant node object
+ * @return {Object} a [HAST](https://github.com/syntax-tree/hast)-compliant node object
  * @api public
  */
 

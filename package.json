@@ -30,7 +30,6 @@
   "dependencies": {},
   "devDependencies": {
     "commitizen": "^2.9.2",
-    "coveralls": "^2.11.15",
     "cz-conventional-changelog": "^1.2.0",
     "mukla": "^0.4.8",
     "npm-run-all": "^4.0.1",
