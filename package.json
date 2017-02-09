@@ -10,15 +10,22 @@
   "license": "MIT",
   "scripts": {
     "lint": "standard --fix --verbose",
-    "pretest": "npm run lint",
-    "test": "nyc node test.js",
+
+    "test": "npm-run-all -s test:*",
+    "test:api": "nyc --reporter lcov node test.js",
+    "test:report": "nyc report",
+
     "prerelease": "npm test",
     "release": "standard-version --sign --no-verify",
-    "gitadd": "git add --all",
-    "commit": "npm test && npm run gitadd && git-cz",
-    "prebuild": "rimraf dist",
-    "build": "rollup -c",
-    "postbuild": "ls -al dist"
+
+    "git:add": "git add --all",
+    "git:cz": "git-cz",
+
+    "commit": "npm-run-all -s test build:* git:*",
+
+    "build:clean": "rimraf dist",
+    "build:bundle": "rollup -c",
+    "build:show": "ls -al dist"
   },
   "dependencies": {},
   "devDependencies": {
@@ -26,6 +33,7 @@
     "coveralls": "^2.11.15",
     "cz-conventional-changelog": "^1.2.0",
     "mukla": "^0.4.8",
+    "npm-run-all": "^4.0.1",
     "nyc": "^10.0.0",
     "pre-commit": "^1.2.2",
     "rimraf": "^2.5.4",
