@@ -1,6 +1,6 @@
 # mich-parse-selector [![NPM version](https://img.shields.io/npm/v/mich-parse-selector.svg?style=flat)](https://www.npmjs.com/package/mich-parse-selector) [![NPM monthly downloads](https://img.shields.io/npm/dm/mich-parse-selector.svg?style=flat)](https://npmjs.org/package/mich-parse-selector) [![npm total downloads][downloads-img]][downloads-url]
 
-> Tiny parser for simple CSS selectors, just in 300 bytes.  Pretty similar to what is done in [hyperscript][]
+> Tiny parser for simple CSS selectors, just in ~300 bytes.  Pretty similar to what is done in [hyperscript][]
 
 [![code climate][codeclimate-img]][codeclimate-url] 
 [![standard code style][standard-img]][standard-url] 
@@ -15,6 +15,7 @@ _You might also be interested in [gibon][] - a minimal & functional 600 bytes cl
 - [Install](#install)
 - [Usage](#usage)
 - [API](#api)
+  * [michParseSelector](#michparseselector)
 - [Related](#related)
 - [Contributing](#contributing)
 - [Building docs](#building-docs)
@@ -45,6 +46,39 @@ const michParseSelector = require('mich-parse-selector')
 ```
 
 ## API
+
+### [michParseSelector](index.js#L46)
+> Parse a simple CSS selector like `p.foo#hero.btn-large.btn` into a [HAST](https://github.com/syntax-tree/hast) node, which is a specification for the Html (or Hypertext) Abstract Syntax Tree. If "tag name" is omitted it defaults to `div`.
+
+**Params**
+
+* `selector` **{String}**: a css selector    
+* `returns` **{Object}**: a HAST-compliant node object  
+
+**Example**
+
+```js
+const parseSelector = require('mich-parse-selector')
+
+const divNode = parseSelector('.bar')
+const node = parseSelector('p.foo#hero.btn-large.btn')
+
+console.log(divNode)
+// => {
+//  type: 'element',
+//  tagName: 'div',
+//  properties: { className: [ 'bar' ] },
+//  children: []
+// }
+
+console.log(node)
+// => {
+//  type: 'element',
+//  tagName: 'p',
+//  properties: { id: 'hero', className: [ 'foo', 'btn-large', 'btn' ] },
+//  children: []
+// }
+```
 
 ## Related
 - [always-done](https://www.npmjs.com/package/always-done): Handle completion and errors with elegance! Support for streams, callbacks, promises, child processes, async/await and sync functions. A drop-in replacement… [more](https://github.com/hybridables/always-done#readme) | [homepage](https://github.com/hybridables/always-done#readme "Handle completion and errors with elegance! Support for streams, callbacks, promises, child processes, async/await and sync functions. A drop-in replacement for [async-done][] - pass 100% of its tests plus more")
