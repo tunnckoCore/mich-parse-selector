@@ -1,6 +1,6 @@
 {
   "name": "mich-parse-selector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny parser for simple CSS selectors, just in ~300 bytes.  Pretty similar to what is done in [hyperscript][]",
   "repository": "tunnckoCore/mich-parse-selector",
   "author": "Charlike Mike Reagent <@tunnckoCore> (https://i.am.charlike.online)",
@@ -44,7 +44,20 @@
     "index.js",
     "dist/"
   ],
-  "keywords": [],
+  "keywords": [
+    "bytes",
+    "css",
+    "css-parse",
+    "minimal",
+    "parse",
+    "parse-selector",
+    "parser",
+    "selector",
+    "selector-parser",
+    "selectors",
+    "tiny",
+    "util"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
