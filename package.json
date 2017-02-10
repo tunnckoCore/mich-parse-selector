@@ -1,6 +1,6 @@
 {
   "name": "mich-parse-selector",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Tiny parser for simple CSS selectors, just in ~300 bytes.  Pretty similar to what is done in [hyperscript][]",
   "repository": "tunnckoCore/mich-parse-selector",
   "author": "Charlike Mike Reagent <@tunnckoCore> (https://i.am.charlike.online)",
@@ -10,19 +10,14 @@
   "license": "MIT",
   "scripts": {
     "lint": "standard --fix --verbose",
-
     "test": "npm-run-all -s test:*",
     "test:api": "nyc --reporter lcov node test.js",
     "test:report": "nyc report",
-
     "prerelease": "npm test",
     "release": "standard-version --sign --no-verify",
-
     "git:add": "git add --all",
     "git:cz": "git-cz",
-
     "commit": "npm-run-all -s test build:* git:*",
-
     "build": "npm-run-all -s build:*",
     "build:clean": "rimraf dist",
     "build:bundle": "rollup -c",
