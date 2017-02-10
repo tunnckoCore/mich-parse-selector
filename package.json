@@ -1,6 +1,6 @@
 {
   "name": "mich-parse-selector",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tiny parser for simple CSS selectors, just in ~300 bytes.  Pretty similar to what is done in [hyperscript][]",
   "repository": "tunnckoCore/mich-parse-selector",
   "author": "Charlike Mike Reagent <@tunnckoCore> (https://i.am.charlike.online)",
