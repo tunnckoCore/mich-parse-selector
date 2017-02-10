@@ -21,7 +21,6 @@ mich-parse-selector
 # ##########
 *.7z
 *.dmg
-*.gz
 *.iso
 *.jar
 *.rar
